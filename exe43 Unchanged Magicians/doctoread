@@ -1,0 +1,53 @@
+// // Declare a show_magician function.
+//------------------------------------------------
+// function show_magician(Magicians: string[]) {
+//     for (const magician of Magicians) {
+//         console.log(magician);
+//     }
+// }
+// details:-This function show_magician takes an array of strings (Magicians) as a parameter and prints each magician's name using a for...of loop. It's a simple function to display the contents of an array.
+
+// =====================================================================================================
+// // Declare a THE GREAT function.
+//----------------------------------
+// function the_great(Magicians: string[]) {
+
+//     // Create a new array with "the Great" added to each magician's name
+//-------------------------------------------------------------------------
+//     const great_magicians: string[] = Magicians.map((Magician => `The Great ${Magician}`));
+//     return great_magicians;
+// }
+// details:-The the_great function also takes an array of strings (Magicians) as a parameter. Inside the function, it uses the map method to create a new array (great_magicians). For each magician's name in the original array, it adds "The Great" to the beginning of the name. The resulting array is then returned.
+//====================================================================================================================
+// 
+// 
+// // Original array of magicians
+//--------------------------------
+// const normal_magicians: string[] = ["Merlin", "Houdini", "David Copperfield"];
+
+// details: //declare an array called normal_magicians with three magician names.
+//======================================================================================================
+
+// // Copy of the original array with the great phrase.
+//----------------------------------------------------
+// const great_magicians: string[] = the_great([...normal_magicians]);
+
+// details:create a copy of the original array by using the spread operator ([...normal_magicians]) and pass it to the the_great function. The result is stored in the great_magicians array.
+
+//==============================================================================================================
+// // Print and call the original array.
+//---------------------------------------
+// console.log("Original Array:");
+// show_magician(normal_magicians);
+// details: This code prints the heading "Original Array:" and then calls the show_magician function with the normal_magicians array, displaying each magician's name.
+//=======================================================================================================================
+// 
+// // Print and call the copy of the original array.
+//---------------------------------------------------
+// console.log("\nCopy of Original Array:");
+// show_magician(great_magicians);
+
+// details:This code prints the heading "Copy of Original Array:" and then calls the show_magician function with the great_magicians array, displaying each magician's name with "The Great" added to it.
+//=======================================================================================================================
+// In summary, your code defines two functions (show_magician and the_great), creates an original array of magicians, generates a copy of that array with "The Great" added to each name, and then prints both the original and modified arrays.
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>

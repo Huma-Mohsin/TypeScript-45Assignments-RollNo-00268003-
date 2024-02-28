@@ -1,0 +1,69 @@
+// Interface Definition (Sandwich):
+
+
+// interface Sandwich {
+//     bread: string;
+//     items: string[];
+//     condiments?: string[];
+// } 
+
+/**** This defines an interface named Sandwich with three properties:
+
+// bread: A string representing the type of bread.
+// items: An array of strings representing the sandwich fillings.
+// condiments: An optional array of strings representing condiments. The ? makes it optional.
+
+
+// Function Definition (orderSandwich):
+
+// function orderSandwich(sandwich: Sandwich): void {
+
+//     // Function implementation...
+// }
+//*******     This function takes a parameter named sandwich of type Sandwich. It doesn't return anything (void).
+
+
+// Function Implementation (orderSandwich) as:
+
+
+// function orderSandwich(sandwich: Sandwich): void {
+//     if (sandwich.items.length === 0) {
+//         console.log("You haven't selected any items for your sandwich.");
+//     } else {
+//         console.log("You ordered a sandwich with the following details:");
+//         console.log("Bread:", sandwich.bread);
+//         console.log("Items:", sandwich.items.join(', '));
+
+//         if (sandwich.condiments && sandwich.condiments.length > 0) {
+//             console.log("Condiments:", sandwich.condiments.join(', '));
+//         }
+//     }
+//     console.log("-----------------------------");
+// }
+// This function checks if the items array in the sandwich parameter is empty. If it is, it prints a message indicating that no items were selected.
+// If there are items, it prints a summary of the sandwich, including the type of bread and the items. If condiments are present, it also prints them.
+// Finally, it adds a separator line for better readability.
+
+
+
+// Function Calls:
+
+// typescript
+
+// orderSandwich({
+//     bread: "Whole Wheat",
+//     items: ["Ham", "Cheese", "Lettuce"],
+//     condiments: ["Mayo", "Mustard"]
+// });
+
+// orderSandwich({
+//     bread: "White",
+//     items: ["Turkey", "Swiss"]
+// });
+
+// orderSandwich({
+//     bread: "Multigrain",
+//     items: []
+// });
+// These are three calls to the orderSandwich function with different sandwich details. They demonstrate how you can create instances of the Sandwich interface and pass them to the function.
+// Overall, this code provides a clear structure for representing sandwich details, and the orderSandwich function allows you to easily print summaries of different sandwiches//

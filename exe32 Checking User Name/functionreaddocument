@@ -1,0 +1,18 @@
+
+const isUsernameTaken = currentUsers.some((user) => user.toLowerCase() === newUser.toLowerCase());
+
+---------------------------------------------------------------------------------------------------
+currentUsers.some(): The some method is an array method in TypeScript/JavaScript. It tests whether at least one element in the array passes the provided function. In this case, the provided function is an arrow function (user) => user.toLowerCase() === newUser.toLowerCase().
+
+user.toLowerCase() === newUser.toLowerCase(): This part of the function is the comparison logic. It checks if the lowercase version of the existing user in currentUsers is equal to the lowercase version of the newUser. This comparison is case-insensitive.
+
+isUsernameTaken: The result of currentUsers.some() is assigned to the variable isUsernameTaken. If any existing username matches the new username (case-insensitive), isUsernameTaken will be true. Otherwise, it will be false.
+
+console.log() statements: The code then prints messages based on whether the username is taken or available.
+
+So, the overall purpose of this code is to iterate through newUsers and check if each new username is already present in currentUsers. It performs a case-insensitive comparison, and based on the result, it logs a message indicating whether the username is already taken or available.
+
+
+
+
+

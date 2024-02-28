@@ -1,0 +1,15 @@
+
+//Install Node.js, TypeScript and VS Code on your computer.
+----------------------------------------------------------
+
+An Enviroment is setup according to the given instructions such as:-
+
+1- Nodejs is downloaded from its official website i.e LTS version 20.11.1 is downloaded.
+
+2- Visual Studio Code has been downloaded from its official website.          (version:      1.87.0)
+
+3- Typescript has been installed by following command.
+
+   At command prompt : npm install --global typescript @5.0.2
+
+

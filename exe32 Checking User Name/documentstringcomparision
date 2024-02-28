@@ -1,0 +1,26 @@
+// Case-insensitive comparison in strings means that the comparison does not take into account the case (uppercase or lowercase) of the characters in the strings. In other words, it treats uppercase and lowercase letters as equivalent.
+
+// For example, in a case-insensitive comparison:
+
+// "admin" would be considered equal to "Admin", "ADMIN", "aDMiN", etc.
+// "Hello" would be considered equal to "hello", "HELLO", "hElLo", etc.
+// To achieve a case-insensitive comparison, you typically convert both strings to either lowercase or uppercase before performing the comparison. This ensures that the comparison is independent of the specific case of the characters in the strings. This is commonly done using functions like toLowerCase() or toUpperCase().
+
+// In JavaScript, for instance:
+
+// javascript
+// Copy code
+// const str1 = "Hello";
+// const str2 = "hello";
+
+// if (str1.toLowerCase() === str2.toLowerCase()) {
+//     console.log("The strings are equal (case-insensitive comparison).");
+// } else {
+//     console.log("The strings are not equal.");
+// }
+// In this example, the toLowerCase() method is used to convert both strings to lowercase before the comparison, making it case-insensitive.
+
+
+
+
+

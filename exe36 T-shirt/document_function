@@ -1,0 +1,87 @@
+//FUNCTION:-
+-----------
+What is a Function?
+A function is like a small program inside your program. It's a way to group together a set of instructions that you can use whenever you need them.
+
+How to Define a Function?
+In TypeScript, you can define a function like this:
+
+function greet(name: string): string {
+    return "Hello, " + name + "!";
+}
+function:
+ This keyword tells TypeScript that we're creating a function.
+greet: This is the name of our function.
+(name: string): These are the parameters the function takes. Here, it's saying the function needs a name, which should be a string.
+: string: This is saying that our function will return a string.
+How to Use a Function?
+Once you've defined a function, you can use it:
+as:-
+const greeting = greet("Alice");
+console.log(greeting);
+Here, we're calling (using) the greet function and passing the name "Alice". The function returns a greeting, and we store that greeting in the greeting variable. Finally, we print it out.
+
+**Functions Can Do More:
+Functions can do various things. They can take multiple parameters, perform calculations, or even not return anything (void). Here's an example:
+
+function addNumbers(x: number, y: number): number {
+    return x + y;
+}
+
+const sum = addNumbers(5, 3);
+console.log(sum);
+In this example, addNumbers takes two numbers, adds them together, and returns the result.
+
+***Functions Can be Flexible:
+Functions can be flexible with optional parameters and default values:
+
+function greet(name?: string): string {
+    if (name) {
+        return "Hello, " + name + "!";
+    } else {
+        return "Hello!";
+    }
+}
+
+const greeting1 = greet("Bob");
+const greeting2 = greet();
+console.log(greeting1); // Output: Hello, Bob!
+console.log(greeting2); // Output: Hello!
+In this case, name?: string means the name parameter is optional. If you provide a name, it uses it; otherwise, it defaults to a generic greeting.
+
+Summary:
+Definition: A function is like a mini-program that performs a specific task.
+Syntax: function functionName(parameters): returnType { /* code */ }
+Usage: Call a function with functionName(arguments).
+Parameters: Input values that a function can use.
+Return Type: The type of value the function will give back.
+Functions are fundamental in programming and make your code more organized, reusable, and easier to understand. They allow you to break down your program into smaller, manageable pieces.
+----------------------------------------------------------------------------------------------------------------
+//STATIC TYPINDG TS MEANS:-
+-------------------------
+Static typing refers to a programming language feature where variable types are known and checked at compile-time rather than runtime. Here are some key characteristics of static typing:
+
+Explicit Type Declarations: In statically-typed languages, you need to declare the data type of a variable explicitly. For example, in TypeScript:
+
+typescript
+Copy code
+let age: number;
+age = 25; // Valid
+age = "twenty-five"; // Error: Type 'string' is not assignable to type 'number'.
+Compile-Time Checking: The compiler checks for type errors before the code is executed. If there is a type mismatch or violation, the compiler generates an error, preventing the program from running.
+
+Early Error Detection: Since type checking occurs at compile-time, errors related to type mismatches or incorrect use of variables are caught early in the development process. This can help developers identify and fix issues before running the program.
+
+Performance Optimization: The knowledge of variable types at compile-time allows the compiler to optimize the generated machine code for better performance, as it can make assumptions about the types used in the program.
+
+Improved Code Documentation: Type declarations serve as a form of documentation, making it clear to developers what types of values variables are expected to hold. This can enhance code readability and maintenance.
+
+Languages like TypeScript, Java, C++, and Swift are examples of statically-typed languages. In contrast, dynamically-typed languages (e.g., JavaScript, Python) perform type checking at runtime, allowing more flexibility but potentially leading to runtime errors if types are misused.
+
+While static typing has its advantages in terms of catching errors early and improving code documentation, some developers prefer the flexibility provided by dynamically-typed languages, where variables can change types during runtime. Each approach has its trade-offs, and the choice between static and dynamic typing often depends on the specific needs and preferences of the developers and the nature of the project.
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,78 @@
+
+// type Album = {
+//     artist: string;
+//     title: string;
+//     tracks?: number;
+// };
+//======================================================================================
+//detail:
+//-------
+// type Album: This line defines a TypeScript type called Album. This type is used to describe the structure of an object representing a music album.
+
+// { artist: string; title: string; tracks?: number; }: This is the shape of the Album type. It specifies that an album object should have the following properties:
+
+// artist: A required property of type string, indicating the artist of the album.
+// title: A required property of type string, indicating the title of the album.
+// tracks?: number;: An optional property of type number, indicating the number of tracks on the album.
+
+// Next, we define a function called makeAlbum:
+//--------------------------------------------------
+
+
+// function makeAlbum(artist: string, title: string, tracks?: number): Album {
+//     const album: Album = { artist, title };
+//     if (tracks !== undefined) {
+//         album.tracks = tracks;
+//     }
+//     return album;
+// }
+//=====================================================================================
+
+//details
+//--------
+// function makeAlbum(artist: string, title: string, tracks?: number): Album {: This line declares the makeAlbum function, which takes three parameters:
+
+// artist: A required parameter of type string.
+// title: A required parameter of type string.
+// tracks?: number: An optional parameter of type number, representing the number of tracks. The ? indicates that this parameter is optional.
+// const album: Album = { artist, title };: Inside the function, a constant variable album of type Album is declared and assigned an object with artist and title properties. This object represents the basic structure of an album.
+
+// if (tracks !== undefined) { album.tracks = tracks; }: This checks whether the tracks parameter was provided. If it was, it assigns the provided tracks value to the tracks property of the album object.
+
+// return album;: The function returns the created album object.
+//-------------------------------------------------------------------------------------------------------
+
+// Finally, we make some function calls:
+//-------------------------------------
+
+
+// const album1: Album = makeAlbum("Artist1", "Album One");
+// const album2: Album = makeAlbum("Artist2", "Album Two", 12);
+// const album3: Album = makeAlbum("Artist3", "Album Three", 8);
+//-============================================================================================================
+
+//details
+//------
+// const album1: Album = makeAlbum("Artist1", "Album One");: Calls makeAlbum with artist "Artist1", title "Album One", and no specified tracks. The resulting album object is assigned to album1.
+
+// const album2: Album = makeAlbum("Artist2", "Album Two", 12);: Calls makeAlbum with artist "Artist2", title "Album Two", and 12 tracks. The resulting album object is assigned to album2.
+
+// const album3: Album = makeAlbum("Artist3", "Album Three", 8);: Calls makeAlbum with artist "Artist3", title "Album Three", and 8 tracks. The resulting album object is assigned to album3.
+//-----------------------------------------------------------------------------------------------------
+// Finally, we log the album information:
+
+//---------
+// console.log(album1);
+// console.log(album2);
+// console.log(album3);
+
+//=========================================================
+//details
+//-------
+// console.log(album1);, console.log(album2);, console.log(album3);: These lines print the album objects album1, album2, and album3 to the console. This shows the information stored in each album object.
+// This code demonstrates how to define a type, create a function that uses that type, and then use the function to create and display different album objects with varying details.
+
+
+
+
+
