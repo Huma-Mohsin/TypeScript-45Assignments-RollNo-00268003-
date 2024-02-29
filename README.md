@@ -2,7 +2,7 @@
 "# TypeScript-45Assignments-RollNo-00268003-" 
 This assignment is purely based on TypeScript programming Language.
 
-                                                                    ** TypeScript Assignment Journey**
+                                   ** TypeScript Assignment Journey**
 
 In my recent TypeScript assignment, I delved into the intricacies of the language, unveiling its static nature. The journey involved mastering the declaration of variables with explicit types, providing a robust foundation for code clarity and error prevention.
 
@@ -19,7 +19,6 @@ The exploration extended to object declaration, a crucial aspect of TypeScript's
 Lastly, the assignment delved into the orchestration of loops under diverse conditions. Whether employing "for-of" loops for array traversal or implementing "while" loops to dynamically respond to changing scenarios, TypeScript's flexibility in handling loops unfolded.
 
 In essence, the TypeScript assignment was a journey of discovery, unraveling the language's static strength and dynamic capabilities. From variable declarations to conditional statements, each facet contributed to a holistic understanding, paving the way for more robust and maintainable code in my coding endeavors.
-
 
 
 
