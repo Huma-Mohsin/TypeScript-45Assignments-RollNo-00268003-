@@ -2,7 +2,7 @@
 "# TypeScript-45Assignments-RollNo-00268003-" 
 This assignment is purely based on TypeScript programming Language.
 
-                                                                          ** TypeScript Assignment Journey**
+                                                                    ** TypeScript Assignment Journey**
 
 In my recent TypeScript assignment, I delved into the intricacies of the language, unveiling its static nature. The journey involved mastering the declaration of variables with explicit types, providing a robust foundation for code clarity and error prevention.
 
